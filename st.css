@@ -1,0 +1,19 @@
+ body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px;
+      transition: background 0.5s, color 0.5s;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      color: rgb(5, 5, 5);
+      background-color: aqua;
+      
+    }
+    h1 {
+
+      margin-bottom: 20px;
+    }
