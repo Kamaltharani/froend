@@ -1,19 +1,36 @@
- body {
+
+    body {
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 40px;
-      transition: background 0.5s, color 0.5s;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+    #profile {
+      display: none;
+      margin: 20px auto;
+      padding: 20px;
+      width: 300px;
+      border-radius: 12px;
+      background-color: #e0e0e0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    #profile img {
+      width: 100%;
+      border-radius: 8px;
     }
     button {
       margin: 10px;
-      padding: 10px 20px;
+      padding: 12px 20px;
       font-size: 16px;
+      border: none;
+      border-radius: 8px;
       cursor: pointer;
-      color: rgb(5, 5, 5);
-      background-color: aqua;
-      
+      transition: 0.3s;
     }
-    h1 {
-
-      margin-bottom: 20px;
+    button:hover {
+      transform: scale(1.1);
     }
+    #showBtn { background: #4CAF50; color: white; }
+    #colorBtn { background: #2196F3; color: white; }
+    #greetBtn { background: #FF9800; color: white; }

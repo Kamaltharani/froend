@@ -57,8 +57,8 @@
 // console.log(todoList);
 
 //----------9----------
-let movise = ["Inception", "Avatar", "Titanic", "Matrix"];
-let numbers = [1, 2, 3, 4, 5];
+// let movise = ["Inception", "Avatar", "Titanic", "Matrix"];
+// let numbers = [1, 2, 3, 4, 5];
 
 // Challenge 1: Double all numbers
 // Challenge 2: Find movies with 'a' in the name
@@ -155,34 +155,120 @@ let numbers = [1, 2, 3, 4, 5];
 //   }
 //   console.log(line);
 // }
+//-------------------12------------------
+//--------------dom----------------
 
-function changeTitle() {
-  document.getElementById("demo-text").innerHTML = "JavaScript is awesome!";
-}
+// function changeTitle() {
+//   document.getElementById("demo-text").innerHTML = "JavaScript is awesome!";
+// }
 
-   // Change the title text
-   function changeTitle() {
-    document.getElementById("page-title").innerHTML = "JavaScript is Awesome!";
-  }
+//    // Change the title text
+//    function changeTitle() {
+//     document.getElementById("page-title").innerHTML = "JavaScript is Awesome!";
+//   }
 
-  // Change background and text colors randomly
-  function changeColors() {
-    let colors = ["#ff9999", "#99ccff", "#99ff99", "#ffff99", "#ffccff"];
-    let randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = randomColor;
+//   // Change background and text colors randomly
+//   function changeColors() {
+//     let colors = ["#ff9999", "#99ccff", "#99ff99", "#ffff99", "#ffccff"];
+//     let randomColor = colors[Math.floor(Math.random() * colors.length)];
+//     document.body.style.backgroundColor = randomColor;
 
-    // Change text color for contrast
-    let textColors = ["#000000", "#333333", "#660066", "#003366"];
-    document.body.style.color = textColors[Math.floor(Math.random() * textColors.length)];
-  }
+//     // Change text color for contrast
+//     let textColors = ["#000000", "#333333", "#660066", "#003366"];
+//     document.body.style.color = textColors[Math.floor(Math.random() * textColors.length)];
+//   }
 
-  // Add an extra message below
-  function addMessage() {
-    let p = document.createElement("p");
-    p.textContent = "✨i love my family!";
-    document.body.appendChild(p);
-  }
+//   // Add an extra message below
+//   function addMessage() {
+//     let p = document.createElement("p");
+//     p.textContent = "✨i love my family!";
+//     document.body.appendChild(p);
+//}
 
 
 
   
+//-----------a----------
+// generatname("thara")
+
+// function generatname(name){
+//   console.log(name);
+// }
+
+// generat("thara",28)
+
+// function generat(name,age){
+// console.log(name+age)
+// }
+
+
+//---------a1-------
+
+// numbers=[1,2,3,4,5,6]
+// for(let i=0 ;i < numbers.length; i++){
+//   const element = [i]
+// }
+// console.log(numbers)
+
+// numbers.forEach (number =>{
+// console.log(number)
+// });
+
+//----------a2-----------while
+
+// numbers[10,20,30,40,50]
+// let i=0;
+// // while(i<numbers.length){
+//   console.log(i);
+//   i++
+//}
+// numbers=[10,20,30,40,50]
+// let i=0
+// // while(i<numbers.length){
+// //   console.log(numbers[i]);
+// // i++
+// // }
+
+// do {
+//   console.log(i),
+//   console.log(numbers[i])
+//   i++
+// } while(i<numbers.length)
+
+//----------------DOM-----------
+const profileDiv = document.getElementById("profile");
+const greeting = document.getElementById("greeting");
+const profileImg = document.getElementById("profileImg");
+
+const greetings = [
+  "Hello, nice to see you! 👋",
+  "Welcome to the page! 🌟",
+  "Have a great day! 😊",
+  "You're doing amazing! 🚀",
+  "Stay awesome! 💯"
+];
+
+const images = [
+  "https://picsum.photos/300/200?random=1",
+  "https://picsum.photos/300/200?random=2",
+  "https://picsum.photos/300/200?random=3",
+  "https://picsum.photos/300/200?random=4",
+  "https://picsum.photos/300/200?random=5"
+];
+
+const colors = ["#ffb3ba", "#baffc9", "#bae1ff", "#ffffba", "#ffcba4"];
+
+document.getElementById("showBtn").addEventListener("click", () => {
+  profileDiv.style.display = "block";
+  profileImg.src = images[Math.floor(Math.random() * images.length)];
+  greeting.textContent = greetings[Math.floor(Math.random() * greetings.length)];
+});
+
+document.getElementById("colorBtn").addEventListener("click", () => {
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  profileDiv.style.backgroundColor = randomColor;
+});
+
+document.getElementById("greetBtn").addEventListener("click", () => {
+  greeting.textContent = greetings[Math.floor(Math.random() * greetings.length)];
+});
