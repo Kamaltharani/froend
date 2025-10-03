@@ -236,39 +236,47 @@
 // } while(i<numbers.length)
 
 //----------------DOM-----------
-const profileDiv = document.getElementById("profile");
-const greeting = document.getElementById("greeting");
-const profileImg = document.getElementById("profileImg");
+// const profileDiv = document.getElementById("profile");
+// const greeting = document.getElementById("greeting");
+// const profileImg = document.getElementById("profileImg");
 
-const greetings = [
-  "Hello, nice to see you! 👋",
-  "Welcome to the page! 🌟",
-  "Have a great day! 😊",
-  "You're doing amazing! 🚀",
-  "Stay awesome! 💯"
-];
 
-const images = [
-  "https://picsum.photos/300/200?random=1",
-  "https://picsum.photos/300/200?random=2",
-  "https://picsum.photos/300/200?random=3",
-  "https://picsum.photos/300/200?random=4",
-  "https://picsum.photos/300/200?random=5"
-];
 
-const colors = ["#ffb3ba", "#baffc9", "#bae1ff", "#ffffba", "#ffcba4"];
+     
+// const colors = ["#ffb3ba", "#baffc9", "#bae1ff", "#ffffba", "#ffcba4"];
 
-document.getElementById("showBtn").addEventListener("click", () => {
-  profileDiv.style.display = "block";
-  profileImg.src = images[Math.floor(Math.random() * images.length)];
-  greeting.textContent = greetings[Math.floor(Math.random() * greetings.length)];
-});
+// document.getElementById("showBtn").addEventListener("click", () => {
+//   profileDiv.style.display = "block";
+//   profileImg.src = images[Math.floor(Math.random() * images.length)];
+//   greeting.textContent = greetings[Math.floor(Math.random() * greetings.length)];
+// });
 
-document.getElementById("colorBtn").addEventListener("click", () => {
-  const randomColor = colors[Math.floor(Math.random() * colors.length)];
-  profileDiv.style.backgroundColor = randomColor;
-});
+// document.getElementById("colorBtn").addEventListener("click", () => {
+//   const randomColor = colors[Math.floor(Math.random() * colors.length)];
+//   profileDiv.style.backgroundColor = randomColor;
+// });
 
-document.getElementById("greetBtn").addEventListener("click", () => {
-  greeting.textContent = greetings[Math.floor(Math.random() * greetings.length)];
-});
+// document.getElementById("greetBtn").addEventListener("click", () => {
+ // greeting.textContent = greetings[Math.floor(Math.random() * greetings.length)];
+//});
+
+
+//========15=========//
+
+// p1
+// let name ="john"
+// console.log(name);
+
+//p2
+let number =10
+function isEven(number){
+  return number % 2 === 1;
+}
+console.log(number)
+
+
+// p3
+// console.log(userName);
+// let userName = "Alice";
+// console.log(userName);
+
